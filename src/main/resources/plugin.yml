@@ -1,0 +1,4 @@
+name: IOUMC
+version: '1.0-SNAPSHOT'
+main: iou.ink.iOUMC.IOUMC
+api-version: '1.20'

@@ -9,15 +9,16 @@ import iou.ink.iOUMC.tools.NotifyTool;
 import iou.ink.iOUMC.event.UserEvent;
 
 import iou.ink.iOUMC.commands.TestCommand;
+import iou.ink.iOUMC.commands.NotifyCommand;
 
 
 public final class IOUMC extends JavaPlugin {
     public NotifyTool notify = new NotifyTool();
+    public FileConfiguration config = getPluginConfig();
 
     @Override
     public void onEnable() {
         // Plugin startup logic
-        var config = getPluginConfig();
 
         registerEventListeners();
         registerCommands();
@@ -37,6 +38,8 @@ public final class IOUMC extends JavaPlugin {
 
     public void registerCommands(){
         Bukkit.getPluginCommand("test").setExecutor(new TestCommand());
+        Bukkit.getPluginCommand("notify").setExecutor(new NotifyCommand());
+
     }
 
     public FileConfiguration getPluginConfig(){
@@ -44,7 +47,6 @@ public final class IOUMC extends JavaPlugin {
         this.saveDefaultConfig();
         return config;
     }
-
 
     public void pluginLog() {
         this.getLogger().info("test pluginLog");

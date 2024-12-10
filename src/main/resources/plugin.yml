@@ -7,3 +7,8 @@ commands:
     description: Test command
     usage: /<command>  #  命令return false时给出的提示
     aliases: ["test1"]  # 命令的别名
+  notify:
+    description: Test notify
+    usage: /<command>  #  命令return false时给出的提示
+    aliases: ["msg"]  # 命令的别名
+

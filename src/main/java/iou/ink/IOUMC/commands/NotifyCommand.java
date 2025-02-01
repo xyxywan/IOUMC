@@ -1,4 +1,4 @@
-package iou.ink.iOUMC.commands;
+package iou.ink.IOUMC.commands;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
 import java.util.List;
 
-import iou.ink.iOUMC.tools.NotifyTool;
+import iou.ink.IOUMC.tools.NotifyTool;
 
 
 public class NotifyCommand implements CommandExecutor{

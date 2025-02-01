@@ -1,15 +1,15 @@
-package iou.ink.iOUMC;
+package iou.ink.IOUMC;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.configuration.file.FileConfiguration;
 
-import iou.ink.iOUMC.tools.NotifyTool;
+import iou.ink.IOUMC.tools.NotifyTool;
 
-import iou.ink.iOUMC.event.UserEvent;
+import iou.ink.IOUMC.event.PlayerEvent;
 
-import iou.ink.iOUMC.commands.TestCommand;
-import iou.ink.iOUMC.commands.NotifyCommand;
+import iou.ink.IOUMC.commands.TestCommand;
+import iou.ink.IOUMC.commands.NotifyCommand;
 
 
 public final class IOUMC extends JavaPlugin {
@@ -33,7 +33,7 @@ public final class IOUMC extends JavaPlugin {
     }
 
     public void registerEventListeners(){
-        Bukkit.getPluginManager().registerEvents(new UserEvent(), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerEvent(), this);
     }
 
     public void registerCommands(){

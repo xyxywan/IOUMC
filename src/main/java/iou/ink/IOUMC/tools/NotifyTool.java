@@ -1,4 +1,4 @@
-package iou.ink.iOUMC.tools;
+package iou.ink.IOUMC.tools;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 

@@ -1,6 +1,6 @@
 name: IOUMC
 version: '1.0.1'
-main: iou.ink.iOUMC.IOUMC
+main: iou.ink.IOUMC.IOUMC
 api-version: '1.20'
 commands:
   test:
